@@ -1,0 +1,46 @@
+/* Position and Hide the dropdown */
+.drop {
+  position: relative;
+}
+
+.dropdown {
+  /* background-color: mediumpurple; */
+  background-color: transparent;
+  width: 120px;
+  height: 180px;
+  position: absolute;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.dropdown li {
+  background-color: #05243b;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Display the dropdown */
+.nav-links li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.dropdown li:hover {
+  background-color: #f6227b;
+}
+
+/* .nav-links li:focus + .dropdown li {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  } */
